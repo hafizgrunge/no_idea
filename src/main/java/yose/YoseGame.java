@@ -22,11 +22,19 @@ public class YoseGame {
             return new ModelAndView(new Object(), "index.ftl");
         }, new FreeMarkerEngine());
     	
+    	get("/readme", (request, response) -> {
+    		response.type("text/html");
+    		
+            return new ModelAndView(new Object(), "readme.ftl");
+        }, new FreeMarkerEngine());
+    	
     	get("/ping", (request, response) -> {
     		response.type("application/json");
     		
     		return new Status(true); 
     	}, gson::toJson);
+    	
+    	
     }
     
     static int getHerokuAssignedPort() {
