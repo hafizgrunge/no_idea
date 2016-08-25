@@ -1,6 +1,6 @@
 <html>
 <body>
 <font size= "30"><div align="center">Hello Yose!</div></font>
-<a href="http://localhost:4567/index2.ftl">a#repository-link</a>
+<a href="https://intense-dawn-45930.herokuapp.com/ping">ping-challenge-link</a>
 </body>
 </html>
