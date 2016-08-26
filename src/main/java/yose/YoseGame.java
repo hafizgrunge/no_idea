@@ -34,7 +34,12 @@ public class YoseGame {
     		return new Status(true); 
     	}, gson::toJson);
     	
-    	
+    	get("/contactme", (request, response) -> {
+    		response.type("text/html");
+    		
+            return new ModelAndView(new Object(), "contactme.ftl");
+        }, new FreeMarkerEngine());
+    	    	
     }
     
     static int getHerokuAssignedPort() {

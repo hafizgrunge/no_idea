@@ -4,5 +4,6 @@
 <a href="https://github.com/hafizgrunge/no_idea" id="repository-link">Repository</a>
 <a id="contact-me-link" href='contactme'>contact me</a>
 <a href="/ping" id="ping-challenge-link">Ping</a>
+<a id="contact-me-link" href='contactme'>contact me</a>
 </body>
 </html>
