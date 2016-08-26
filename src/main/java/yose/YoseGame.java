@@ -46,7 +46,7 @@ public class YoseGame {
             return new ModelAndView(new Object(), "astroport.ftl");
         }, new FreeMarkerEngine());
 
-     	get("/primeFactors/:number", (request, response) -> {
+     	get("/primeFactors?:number", (request, response) -> {
     		response.type("application/json");
     		
 		return new PrimeFactor(Integer.parseInt(request.params(":number"))); 
