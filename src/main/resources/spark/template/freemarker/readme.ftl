@@ -1,5 +1,5 @@
 <html>
 <body>
-YoseTheGame
+YoseTheGame!
 </body>
 </html>
