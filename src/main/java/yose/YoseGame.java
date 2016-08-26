@@ -46,19 +46,9 @@ public class YoseGame {
             return new ModelAndView(new Object(), "astroport.ftl");
         }, new FreeMarkerEngine());
     	    	
-    	get("/minesweeper", (request, response) -> {
-    		response.type("text/html");
-    		
-            return new ModelAndView(new Object(), "minesweeper.ftl");
-        }, new FreeMarkerEngine());
-
-	get("/primeFactors", (request, response) -> {
-    		response.type("application/json");
-    		
-		return new PrimeFactor(Integer.parseInt(request.getParameter("number"))); 
-    	}, gson::toJson);
-    	    	
     }
+
+
     
     static int getHerokuAssignedPort() {
         ProcessBuilder processBuilder = new ProcessBuilder();
